@@ -40,7 +40,7 @@ namespace ConsoleApp1.Entities
             double sum = BaseSalary;
             foreach (HoursContract contract in Contracts)
             {
-                if (Contracts.Date.Year == year && Contracts.Date.Month == month)
+                if (contract.Date.Year == year && contract.Date.Month == month)
                 {
                     sum += contract.TotalValue();
                 }
